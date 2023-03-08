@@ -2,16 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Botonera from './components/main/Botonera/Botonera';
+import Presupuesto from './components/main/Search/Presupuesto/Presupuesto';
+import SelectRental from './components/main/Search/Select/Select-rental';
+import Slice from './components/header/Slice/Slice';
+import Nav from './components/header/Nav/Nav';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    <Nav />
+    <Slice />
+    <Botonera />
+    <SelectRental />
+    <Presupuesto />
+
+
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
